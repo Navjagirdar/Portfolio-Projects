@@ -1,4 +1,4 @@
-# Covid-19
+# Covid-19 Data Exploration 
 <strong>Objective:</strong> 
 Exploring the effects of Covid worldwide in the year 2019 using MS SQL. 
 
