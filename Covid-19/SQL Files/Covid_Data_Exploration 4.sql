@@ -2,7 +2,7 @@
   Covid-19 Data Exploration 
   Table: dbo.CovidDeaths
          dbo.CovidVaccinations
-  Skills Used: Joins, CTE, Aggregated Functions, Temp Table, Converting Data type, and Windows Function
+  Skills Used: Joins, CTE, Aggregated Functions, Temp Table, Converting Data type, Windows Function, and View Creation 
  
 */
 --- Basic Select query to check the data 
@@ -36,16 +36,6 @@ select location, population, diabetes_prevalence, max(AvgPositiveRate) As MaxAvg
 group by location, population, diabetes_prevalence
 order by 4 desc;
 
-
--- Looking for countries with highest Positivity rate 
-Select dea.location, dea.population, Max(cast(vac.positive_rate as float)) As MaxPositiveRate
- from dbo.CovidDeaths as dea 
-join  dbo.CovidVaccinations as vac on dea.location = vac.location
-and dea.date = vac.date
-where dea.continent is not null
-group by dea.location, dea.population
-order by 3 desc; 
-
 --Looking for countries with highest life expectancy per PercentPopulation infected 
 select dea.location, dea.population, max(total_cases) as MaxTotalCases,
 Max(vac.life_expectancy) as MaxLifeExpectancy
@@ -68,5 +58,16 @@ group by dea.location, dea.population
 )
 Select *, (MaxTotalCases/population) * 100 As PercentPopulationInfected from LexVsPpi
 order by 4 desc;
+
+-- Creating View to store query 
+-- Looking for countries with highest Positivity rate 
+Create View MaxPositiveRate AS 
+Select dea.location, dea.population, Max(cast(vac.positive_rate as float)) As MaxPositiveRate
+ from dbo.CovidDeaths as dea 
+join  dbo.CovidVaccinations as vac on dea.location = vac.location
+and dea.date = vac.date
+where dea.continent is not null
+group by dea.location, dea.population
+
 
 
