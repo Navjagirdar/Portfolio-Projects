@@ -5,7 +5,7 @@ April Product Sales Analysis.
 <ul><li>Raw data from https://www.kaggle.com/datasets/knightbearr/sales-product-data</li>
 <li>Sales_April_2019 (Cleaned Data).xlsx</li>
 <li>Tableau Dashboard: https://public.tableau.com/app/profile/naveed.jagirdar/viz/AprilSalesDashboard1/AprilSalesDashboard</li>
-/ul>
+</ul>
 <strong>Skills Applied:</strong> Excel: Data Formatting, Data Calculation, VLOOKUP, Pivot Tables, Chats and Dashboard Creation </br>
 </br>
 <strong>Key Insights:</strong> 
