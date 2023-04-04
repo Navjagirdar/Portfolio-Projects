@@ -21,11 +21,4 @@ April Product Sales Analysis.
 <br>
 ![Screenshot 2023-04-03 075818](https://user-images.githubusercontent.com/128883937/229804381-cfac5274-8ddb-4905-a693-7c4df695635e.png)
 
-<ul>
-How to increase Sales in the South?
-<li>Promote high revenue products in the Georgia</li>
-<li>Promoting other products on Sunday will increase more sales since on Monday there is a high sales volume. 
-    In Addition, promoting on least sales volume day would also increase the revenue</li>
-<li>Promoting high price product on down time can increase the revenue. For example, on Saturday promoting 1hr prior to increase sales volume can generate value</li>
-</ul>
 
