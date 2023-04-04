@@ -18,4 +18,5 @@ April Product Sales Analysis.
 <li>West is the highest revenue generating region and South is the lowest </li>
 <li> California is the highest revenue generating state with 40.3% while Maine is the least with 7.10%</li>
 </ul>
-![Dashboard 1](https://user-images.githubusercontent.com/128883937/229818603-cf179613-9d15-42bc-bc16-23bc78628676.png)
+
+![Dashboard 1](https://user-images.githubusercontent.com/128883937/229819164-d0889532-de7e-44dd-b064-d1cdc7f458b5.jpg)
