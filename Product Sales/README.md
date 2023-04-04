@@ -18,4 +18,10 @@ April Product Sales Analysis.
 <li>West is the highest revenue generating region and South is the lowest </li>
 <li> California is the highest revenue generating state with 40.3% while Maine is the least with 7.10%</li>
 </ul>
-<img srcd = "https://github.com/Navjagirdar/Portfolio-Projects/blob/main/Product%20Sales/img/Dashboard%201.jpg">
+<br>
+<ul>
+How to increase Sales in the South?
+<li>Promote high revenue product in the Georgia</li>
+<li>Promoting other products on Sunday will increase more sales since on Monday there is a high sales volume. In Addition, promoting on least sales volume day would also increase the revenue</li>
+<li>Promoting high price product on down time can increase the revenue. For example, on Saturday promoting 1hr prior to increase sales volume can generate value</li>
+</ul>
