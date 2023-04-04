@@ -10,7 +10,7 @@ April Product Sales Analysis.
 </br>
 <strong>Key Insights:</strong> 
 <ul>
-<li> AAA batteries are (4 pack) is ordered most. However, MacBook Pro Laptop is the highest revenue generating product </li>
+<li> AAA batteries(4 pack) is ordered most. However, MacBook Pro Laptop is the highest revenue generating product </li>
 <li> Top 3 high revenue generating products:
 <li>MacBook Pro Laptop : 22.78%</li>
 <li>iPhone: 14.3%</li>
@@ -20,4 +20,12 @@ April Product Sales Analysis.
 
 ![April Sales Dashboard 1](https://user-images.githubusercontent.com/128883937/229517141-5baf8b65-8dbf-4d34-b937-36f17a38ac70.jpg)
 <br>
+<br>
+<ul>
+How to increase Sales in the South?
+<li>Promote high revenue products in the Georgia</li>
+<li>Promoting other products on Sunday will increase more sales since on Monday there is a high sales volume. 
+    In Addition, promoting on least sales volume day would also increase the revenue</li>
+<li>Promoting high price product on down time can increase the revenue. For example, on Saturday promoting 1hr prior to increase sales volume can generate value</li>
+</ul>
 
