@@ -17,8 +17,8 @@ April Product Sales Analysis.
 <li>ThinkPad Laptop: 11.54%</li> </li>
 <li>West is the highest revenue generating region and South is the lowest </li>
 <li> California is the highest revenue generating state with 40.3% while Maine is the least with 7.10%</li>
-![April Sales Dashboard 1](https://user-images.githubusercontent.com/128883937/229517141-5baf8b65-8dbf-4d34-b937-36f17a38ac70.jpg)
 </ul>
+![April Sales Dashboard 1](https://user-images.githubusercontent.com/128883937/229517141-5baf8b65-8dbf-4d34-b937-36f17a38ac70.jpg)
 <br>
 <ul>
 How to increase Sales in the South?
