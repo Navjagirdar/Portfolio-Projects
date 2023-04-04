@@ -19,8 +19,7 @@ April Product Sales Analysis.
 <li> California is the highest revenue generating state with 40.3% while Maine is the least with 7.10%</li>
 </ul>
 <br>
-![Dashboard 1](https://user-images.githubusercontent.com/128883937/229809658-28ea542f-142b-4351-9a1b-5d571be79118.png)
-
+<img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
 
 
 
