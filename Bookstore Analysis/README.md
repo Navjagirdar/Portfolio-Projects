@@ -16,6 +16,9 @@ Exploring the Bookstore dataset to answer the following questions.
 <strong>Skills Applied:</strong> Data Cleaning, Data Transformation, Excel Formula, Functions and  PowerBI Data Visualization
 </br>
 </br>
+[embed][/embed]
+</br>
+</br>
 <strong>Key Insights:</strong> 
 <ul>
 <li>The Perfect Play (Play by Play #1): 59.99 is the most expensive book</li>
