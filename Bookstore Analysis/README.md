@@ -1,4 +1,4 @@
-# Book Analysis 
+# Bookstore Analysis 
 <strong>Objective:</strong> 
 Exploring the Bookstore dataset to answer the following questions.
 <ul><li>Which book is the most expensive?</li>
