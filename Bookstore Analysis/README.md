@@ -17,7 +17,12 @@ Exploring the Bookstore dataset to answer the following questions.
 </br>
 </br>
 
+![](img/Dashboard%201.jpg)
+
 </br>
+
+![](img/Dashboard%202.jpg)
+
 </br>
 <strong>Key Insights:</strong> 
 <ul>
