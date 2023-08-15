@@ -7,7 +7,7 @@ Exploring the Bookstore dataset to answer the following questions.
 <li>which Not in Stock book generated most sales?</li>
 </ul>
 </br>
-<strong>Note:</strong> The following dataset has been transformed to calculate Sales Revenue. Stock field has been changed to "Not in stock" for books that have price value exceeding $30 and for the books that were "In stock" their quantity has been reduced by 2. Revenue is calculated by multiplying Book Sold field to Price field. Some categories have been removed like default and unnamed. 
+<strong>Note:</strong> The following dataset has been transformed to calculate Sales Revenue. Stock field has been changed to "Not in stock" for books that have price value exceeding $30 and for the books that were "In stock" their quantity has been reduced by 2. Revenue is calculated by multiplying Book Sold field to Price field. Some categories have been removed like default and unnamed.
 </br>
 </br>
 <strong>Dataset: bookstore dataset </strong>
