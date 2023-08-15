@@ -20,7 +20,7 @@ April Product Sales Analysis.
 </ul>
 
 ![](img/Dashboard%201.jpg)
-
+![](img/April%20Sales%20Dashboard%201.jpg)
 <br>
 <strong>How to increase Sales in the South?</strong>
 <ul>
@@ -31,5 +31,5 @@ April Product Sales Analysis.
 
 
 ![](img/Dashboard%202.jpg)
-
+![](img/April%20Sales%20Dashboard%202.jpg)
 <br>
