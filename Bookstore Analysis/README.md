@@ -16,9 +16,7 @@ Exploring the Bookstore dataset to answer the following questions.
 <strong>Skills Applied:</strong> Data Cleaning, Data Transformation, Excel Formula, Functions and  PowerBI Data Visualization
 </br>
 </br>
-![Bookstore Analysis Dashboard 1](https://github.com/Navjagirdar/Portfolio-Projects/assets/128883937/86528c5b-70b6-4043-b680-cbe15203aefd)
-</br>
-![Bookstore Analysis Dashboard 2](https://github.com/Navjagirdar/Portfolio-Projects/assets/128883937/bbc83591-9e05-4c41-9e30-a73f18f04ff3)
+
 </br>
 </br>
 <strong>Key Insights:</strong> 
