@@ -33,10 +33,12 @@ In this capstone project, I am assigned as a junior data analyst at the marketin
 The public dataset Fitbit Fitness Tracker by Mobius is downloaded from Kaggle. It contains personal tracker data about thirty Fitbit users. It includes information about daily activity, steps, and heart rate that can be used to explore users’ habits. However, this dataset has limitation of small sample size and only 2 months of tracked data. 
 Location: The data is available on Kaggle.com in a zip file containing 18 CSV files about daily user’s activities for 2 months in the year 2016. 
 
-<ul>Listed are the CSV files used for this analysis
+<h4>Listed are the CSV files used for this analysis: </h4>
+<ul>
 <li>dailyActivity_merged</li>
-<li>hourlySteps_merged</li>
 <li>sleepDay_merged </li>
+<li>heartrate_seconds_merged</li>
+<li>hourlySteps_merged</li>
 <li>weightLogInfo_merge</li></ul>
 
 <h3><strong>Data Cleaning</strong></h3>
