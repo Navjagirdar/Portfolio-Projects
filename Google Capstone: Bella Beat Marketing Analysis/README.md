@@ -179,3 +179,89 @@ There is a positive correlation between Total steps and Calories burnt.
     labs(title = 'Total Steps vs Calories', x= 'Total Steps', y = 'Calories Burnt')
 ```
 ![](img/TotalStep_vs_CaloriesBurnt.png)
+
+The above graph shows more calories are burnt when the step count are higher. The participants needs to walk more in loose calories. 
+
+There is a negative correlation between the number of sedentary minutes versus total minutes asleep. This concludes that the higher the number of hours asleep, lesser amount of time spent sedentary. 
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```r
+#changing col name of date to match in both dataset 
+colnames(dailyActivity)[2]  <- "Date" 
+colnames(sleepDay)[2] <- "Date"
+
+#Merging sleep and activity levels 
+df_merge <- merge(dailyActivity, sleepDay, by = c("Id", "Date"))
+
+## Graph of Sedentary Minutes vs Total Time Asleep
+ggplot(df_merge, aes(x=SedentaryMinutes, y=TotalMinutesAsleep)) +
+geom_point() + geom_smooth(method = "lm", se = FALSE, color = "black") +
+  labs(title = 'Sedentary Minutes vs Total Minutes Asleep', x= 'Sendentary Minutes', y = 'Total Minutes Asleep')
+```
+
+![](img/SedentaryTime_vs_SleepTime.png)
+
+
+We could also see that participants are more active on weekends compared to weekdays and they slept more on weekends versus weekdays. 
+
+```r
+#Calculate average sedentary minutes, total minutes asleep by day 
+average_sedentary_time <- df_merge %>%
+  group_by(weekday) %>%
+  summarize(AvgSedentaryMinute = mean(SedentaryMinutes)/60, AvgtotalSleepMinute = mean(TotalMinutesAsleep)/60)
+print(average_sedentary_time)
+```
+![](img/avg_seden_vs_total_sleep.png)
+
+Only seven participants recorded their heartrate which does not give us clear picture about their heartrate range when they are very active. Additionally, we do not know their age to see if their heart rate falls in normal range depending upon their age. 
+
+```r
+##Average heart rate group by ID
+average_heartrate <- heartrateInSec %>%
+  group_by(Id) %>%
+  summarize(avg_heartrate = mean(Value))
+  print(average_heartrate)
+```
+![](img/avg_heartrate.png)
+
+In the HourlyStep dataset we could use the filter function to figure out the time when the participants are least active and send a reminder every 2hr between 7am to 7pm
+
+```r
+##Converting Active hours from char to time data type
+
+hourlySteps$ActivityHour <- as.ITime(hourlySteps$ActivityHour)
+hourlySteps$AM_PM <- ifelse(hour(hourlySteps$ActivityHour) < 12, " AM", " PM")
+View(hourlySteps)
+
+filter_time <- filter(hourlySteps, hour(ActivityHour) >= 7 & StepTotal == 0 & hour(ActivityHour)< 19)
+ print(filter_time)
+ ```
+ 
+![](img/Inactive_Hour.png)
+ 
+There was no drastic change in the weight of the participants who logged their weight daily for 2 months and only 8 participants have logged their weight. Thus, we could not find any significant statistical pattern in the data set. Additional data is needed to make any analytic conclusion. 
+
+```r
+weightLog%>%
+  group_by(Id)%>%
+  summarise(min(WeightPounds),max(WeightPounds))
+  ```
+![](img/min_max_weight.png)
+
+<h3><strong>Recommendation</strong></h3>
+Bella Beats should focus on marketing more customized fitness plans tailored specifically for their female consumers. These plans should be designed to accommodate their individual routines, age, fitness levels, and body types.
+<br>
+<br>
+According to the National Institution of Health, he recommended daily step count for an average person is 
+10,000 steps. However, our participants' average total steps taken per day is 7,638, falling short of the recommended target. Additionally, women should ideally get 8 to 9 hours of sleep per night, yet our participants are only averaging 7 hours of sleep.
+<br>
+<br>
+To address these issues, the app should incorporate hourly reminders to encourage users to achieve their daily goal of 10,000 steps, especially during periods of lower activity throughout the day. In addition, daily notification should prompt users to prioritize getting enough sleep to reach the recommended 9 hours.  Since participants are more active on weekends compared to weekdays, reminders and notifications should be intensified on Thursdays and Sundays, when they tend to be less active and sleep-deprived. Our analysis indicates that participants were more active when they had adequate hours of sleep. 
+<br>
+<br>
+The next step involves collecting more comprehensive data from a larger sample size over a period of at least one year. This data set should include additional variables such as age, weight, height, heart rate during active and rest periods. 
+<br>
+Furthermore, Bella beat should consider collecting data on women menstrual cycles to provide customized exercise routine, fitness plan, and meditation session depending on individual fitness and health goals. This personalized approach will enhance user engagement and satisfaction while promoting healthier lifestyle habits among female users.
+</p>
+</body>
+  
