@@ -156,3 +156,26 @@ ggplot(dailyActivity, aes(x = dailyActivity$weekday, y=dailyActivity$TotalSteps)
   geom_point(color = "blue", size = 3) +
   labs(title = "Total Steps in a Day", x = "Week Day ", y = "Total Steps")
 ```
+![](img/TotalSteps_in_Day.png)
+
+```r 
+#Average Sleeping hours 
+round(mean(sleepDay$TotalMinutesAsleep)/60)
+```
+![](img/avg_sleeptime.png)
+
+<h5>Observation based on the calculation:</h5>
+<ul><li>Average total steps taken by the participant is 7638 and Total distance walked </li>
+<li>Average calories burned by the participant is 2304</li>
+<li>Participants are most active on Saturday with average total steps of 8153 and least active on Sunday and Thursday with average total steps of 6933 and 7406</li>
+<li>On average participant slept for 7hrs</li>
+<li>No drastic weight change among the 8 participants who logged their weight</li>
+</ul>
+
+There is a positive correlation between Total steps and Calories burnt. 
+```r
+#Corrolation between Total steps vs Calories burnt 
+  ggplot(dailyActivity, aes(x=TotalSteps, y=Calories)) + geom_point() +  geom_smooth(method = "lm", se = FALSE, color = "black") +
+    labs(title = 'Total Steps vs Calories', x= 'Total Steps', y = 'Calories Burnt')
+```
+![](img/TotalStep_vs_CaloriesBurnt.png)
