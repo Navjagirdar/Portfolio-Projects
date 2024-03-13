@@ -51,6 +51,10 @@ install.packages("tidyverse")
 library(tidyverse)
 install.packages("readr")
 library(readr)
+library(dplyr)
+library(ggplot2)
+library(lubridate)
+library(data.table)
 ```
 <p>Installed tidyverse package and used the functions below to get the overview of the datasets structure, content, and summary.</p>
 
@@ -71,6 +75,12 @@ str(weightLog)
 summary(weightLog)
 
 heartrateInSec <- read.csv("C:\\Users\\Navee\\OneDrive\\Documents\\Google Data Analysis\\Fitabase Data 4.12.16-5.12.16\\heartrate_seconds_merged.csv")
+head(heartrateInSec)
+str(heartrateInSec)
+
+hourlySteps <- read.csv("C:\\Users\\Navee\\OneDrive\\Documents\\Google Data Analysis\\Fitabase Data 4.12.16-5.12.16\\hourlySteps_merged.csv")
+head(hourlySteps)
+str(hourlySteps)
 ```
 <p>Data and time fields were changed from char to Date and Time data type in each data set. 
 Integer and float fields were changed from char to Int and Num data types in each data set. 
@@ -127,15 +137,22 @@ mean(dailyActivity$TotalSteps)
 mean(dailyActivity$TotalDistance)
 mean(dailyActivity$Calories)
 ```
-</br>
 
 ![](img/summary_DailyActivity.png)
-</br>
+
 ```r
-#Most Active days and least active days
+##Most Active days and least active days
 average_active_time <- dailyActivity %>%
   group_by(weekday) %>%
   summarize(AvgTotalSteps = mean(TotalSteps), AvgVeryActiveMinute = mean(VeryActiveMinutes), AvgCaloriesBurn = mean(Calories))
 print(average_active_time)
 ```
+
 ![](img/Avg_CaloriesBurnt_Weekday.png)
+
+```r
+## Total steps grouped by weekday
+ggplot(dailyActivity, aes(x = dailyActivity$weekday, y=dailyActivity$TotalSteps)) +
+  geom_point(color = "blue", size = 3) +
+  labs(title = "Total Steps in a Day", x = "Week Day ", y = "Total Steps")
+```
